@@ -5,39 +5,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Link } from "react-router-dom";
 import { Trash2, Plus, Minus, ShoppingBag } from "lucide-react";
-import { useState } from "react";
+import { useCart } from "@/contexts/CartContext";
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([
-    {
-      id: "1",
-      name: "Spray Stealth Plate Defender 30ml",
-      price: 11.99,
-      quantity: 2,
-      image: "/placeholder.svg",
-    },
-    {
-      id: "4",
-      name: "Automotive Relay Tester 11-25V",
-      price: 24.99,
-      quantity: 1,
-      image: "/placeholder.svg",
-    },
-  ]);
-
-  const updateQuantity = (id: string, delta: number) => {
-    setCartItems(items =>
-      items.map(item =>
-        item.id === id
-          ? { ...item, quantity: Math.max(1, item.quantity + delta) }
-          : item
-      )
-    );
-  };
-
-  const removeItem = (id: string) => {
-    setCartItems(items => items.filter(item => item.id !== id));
-  };
+  const { cartItems, updateQuantity, removeFromCart } = useCart();
 
   const subtotal = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
   const shipping = subtotal > 69 ? 0 : 9.99;
@@ -112,8 +83,9 @@ const Cart = () => {
                             <Button
                               variant="ghost"
                               size="icon"
-                              onClick={() => removeItem(item.id)}
+                              onClick={() => removeFromCart(item.id)}
                               className="text-destructive hover:text-destructive"
+                              data-testid={`button-remove-${item.id}`}
                             >
                               <Trash2 className="w-4 h-4" />
                             </Button>

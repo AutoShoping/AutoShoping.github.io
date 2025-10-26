@@ -8,11 +8,13 @@ import { getProductById } from "@/data/products";
 import { ShoppingCart, Heart, Share2, Check, Truck, Shield, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
+import { useCart } from "@/contexts/CartContext";
 
 const ProductDetail = () => {
   const { id } = useParams();
   const product = getProductById(id || "");
   const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   if (!product) {
     return (
@@ -32,7 +34,11 @@ const ProductDetail = () => {
   }
 
   const handleAddToCart = () => {
+    for (let i = 0; i < quantity; i++) {
+      addToCart(product);
+    }
     toast.success(`Added ${quantity} ${product.name} to cart`);
+    setQuantity(1);
   };
 
   return (

@@ -3,6 +3,9 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ShoppingCart } from "lucide-react";
+import { useCart } from "@/contexts/CartContext";
+import { getProductById } from "@/data/products";
+import { toast } from "sonner";
 
 interface ProductCardProps {
   id: string;
@@ -14,6 +17,18 @@ interface ProductCardProps {
 }
 
 export const ProductCard = ({ id, name, price, originalPrice, image, discount }: ProductCardProps) => {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const product = getProductById(id);
+    if (product) {
+      addToCart(product);
+      toast.success(`Added ${name} to cart`);
+    }
+  };
+
   return (
     <Card className="group overflow-hidden border transition-all hover:shadow-[var(--shadow-hover)]">
       <Link to={`/product/${id}`}>
@@ -48,7 +63,13 @@ export const ProductCard = ({ id, name, price, originalPrice, image, discount }:
             )}
           </div>
           
-          <Button size="icon" variant="ghost" className="hover:bg-primary hover:text-primary-foreground">
+          <Button 
+            size="icon" 
+            variant="ghost" 
+            className="hover:bg-primary hover:text-primary-foreground"
+            onClick={handleAddToCart}
+            data-testid={`button-add-to-cart-${id}`}
+          >
             <ShoppingCart className="w-4 h-4" />
           </Button>
         </div>
