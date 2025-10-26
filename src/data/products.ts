@@ -230,6 +230,294 @@ export const products: Product[] = [
       "Durable construction"
     ],
     inStock: true
+  },
+  {
+    id: "13",
+    name: "Car Dashboard Camera HD 1080P",
+    price: 69.99,
+    originalPrice: 99.99,
+    image: carVacuumImg,
+    discount: 30,
+    category: "automotive",
+    description: "High-definition dashboard camera with night vision and loop recording for vehicle security.",
+    features: [
+      "Full HD 1080P recording",
+      "Night vision capability",
+      "Loop recording function",
+      "G-sensor for collision detection",
+      "Wide-angle lens 170°"
+    ],
+    inStock: true
+  },
+  {
+    id: "14",
+    name: "Automotive OBD2 Scanner Diagnostic Tool",
+    price: 39.99,
+    originalPrice: 59.99,
+    image: drillImg,
+    discount: 33,
+    category: "automotive",
+    description: "Professional OBD2 scanner for reading and clearing engine fault codes.",
+    features: [
+      "Read and clear error codes",
+      "Works with all OBD2 vehicles",
+      "LCD display screen",
+      "Easy plug and play",
+      "Real-time data monitoring"
+    ],
+    inStock: true
+  },
+  {
+    id: "15",
+    name: "Car Jump Starter Power Bank 12000mAh",
+    price: 79.99,
+    originalPrice: 119.99,
+    image: carVacuumImg,
+    discount: 33,
+    category: "automotive",
+    description: "Portable jump starter with built-in power bank for charging devices.",
+    features: [
+      "12000mAh high capacity",
+      "Jump starts 12V vehicles",
+      "USB charging ports",
+      "Built-in LED flashlight",
+      "Safety protection features"
+    ],
+    inStock: true
+  },
+  {
+    id: "16",
+    name: "Tire Pressure Monitoring System TPMS",
+    price: 49.99,
+    originalPrice: 79.99,
+    image: toolboxImg,
+    discount: 37,
+    category: "automotive",
+    description: "Real-time tire pressure monitoring system for safer driving.",
+    features: [
+      "4 external sensors included",
+      "LCD display monitor",
+      "Real-time pressure alerts",
+      "Easy installation",
+      "Battery powered sensors"
+    ],
+    inStock: true
+  },
+  {
+    id: "17",
+    name: "Mechanic Tool Set 120 Pieces Professional",
+    price: 129.99,
+    originalPrice: 199.99,
+    image: toolboxImg,
+    discount: 35,
+    category: "tools",
+    description: "Comprehensive professional mechanic tool set with ratchets, sockets, and more.",
+    features: [
+      "120-piece complete set",
+      "Chrome vanadium steel",
+      "Multiple socket sizes",
+      "Heavy-duty storage case",
+      "Professional grade quality"
+    ],
+    inStock: true
+  },
+  {
+    id: "18",
+    name: "Electric Impact Wrench 1/2 Drive",
+    price: 89.99,
+    originalPrice: 139.99,
+    image: drillImg,
+    discount: 36,
+    category: "tools",
+    description: "High torque electric impact wrench for automotive and construction work.",
+    features: [
+      "High torque 450 Nm",
+      "1/2 inch drive size",
+      "Variable speed control",
+      "Forward and reverse",
+      "Includes socket set"
+    ],
+    inStock: true
+  },
+  {
+    id: "19",
+    name: "Laser Level Self-Leveling Green Beam",
+    price: 54.99,
+    originalPrice: 89.99,
+    image: ledLightImg,
+    discount: 39,
+    category: "tools",
+    description: "Professional self-leveling laser level for precise alignment and measurements.",
+    features: [
+      "Green laser beam technology",
+      "Self-leveling function",
+      "360-degree rotation",
+      "Indoor and outdoor use",
+      "Tripod mountable"
+    ],
+    inStock: true
+  },
+  {
+    id: "20",
+    name: "Adjustable Wrench Set 3-Piece",
+    price: 29.99,
+    originalPrice: 44.99,
+    image: toolboxImg,
+    discount: 33,
+    category: "tools",
+    description: "Premium adjustable wrench set with ergonomic grip handles.",
+    features: [
+      "3 different sizes included",
+      "Chrome-plated finish",
+      "Ergonomic grip handles",
+      "Wide jaw opening",
+      "Durable construction"
+    ],
+    inStock: true
+  },
+  {
+    id: "21",
+    name: "Garden Pruning Shears Set Professional",
+    price: 34.99,
+    originalPrice: 54.99,
+    image: gardenHoseImg,
+    discount: 36,
+    category: "home-garden",
+    description: "Professional-grade pruning shears for gardening and landscaping.",
+    features: [
+      "Stainless steel blades",
+      "Ergonomic design",
+      "Safety lock included",
+      "Sharp precision cutting",
+      "Comfortable grip handles"
+    ],
+    inStock: true
+  },
+  {
+    id: "22",
+    name: "Solar Powered Garden Lights 8-Pack",
+    price: 39.99,
+    originalPrice: 69.99,
+    image: ledLightImg,
+    discount: 43,
+    category: "home-garden",
+    description: "Solar-powered LED garden pathway lights, no wiring required.",
+    features: [
+      "8 lights included",
+      "Solar powered, eco-friendly",
+      "Auto on/off sensor",
+      "Weather resistant",
+      "Easy ground installation"
+    ],
+    inStock: true
+  },
+  {
+    id: "23",
+    name: "Lawn Sprinkler System Automatic",
+    price: 44.99,
+    originalPrice: 74.99,
+    image: pressureWasherImg,
+    discount: 40,
+    category: "home-garden",
+    description: "Automatic lawn sprinkler system with adjustable spray patterns.",
+    features: [
+      "360-degree coverage",
+      "Adjustable spray patterns",
+      "Timer function",
+      "Covers large areas",
+      "Easy setup and use"
+    ],
+    inStock: true
+  },
+  {
+    id: "24",
+    name: "Garden Tool Organizer Wall Mount",
+    price: 27.99,
+    originalPrice: 44.99,
+    image: toolboxImg,
+    discount: 38,
+    category: "home-garden",
+    description: "Heavy-duty wall-mounted garden tool organizer and storage rack.",
+    features: [
+      "Holds up to 40 tools",
+      "Wall-mounted design",
+      "Adjustable hooks",
+      "Space-saving solution",
+      "Durable steel construction"
+    ],
+    inStock: true
+  },
+  {
+    id: "25",
+    name: "Wireless Earbuds Bluetooth 5.3 Noise Cancelling",
+    price: 49.99,
+    originalPrice: 89.99,
+    image: bluetoothSpeakerImg,
+    discount: 44,
+    category: "electronics",
+    description: "Premium wireless earbuds with active noise cancellation and long battery life.",
+    features: [
+      "Bluetooth 5.3 connectivity",
+      "Active noise cancellation",
+      "30-hour total battery life",
+      "IPX7 waterproof rating",
+      "Touch control features"
+    ],
+    inStock: true
+  },
+  {
+    id: "26",
+    name: "Smart Watch Fitness Tracker Heart Rate Monitor",
+    price: 59.99,
+    originalPrice: 99.99,
+    image: bluetoothSpeakerImg,
+    discount: 40,
+    category: "electronics",
+    description: "Advanced fitness tracker smartwatch with heart rate monitoring and activity tracking.",
+    features: [
+      "Heart rate monitoring",
+      "Sleep tracking",
+      "Multiple sport modes",
+      "7-day battery life",
+      "Water-resistant IP68"
+    ],
+    inStock: true
+  },
+  {
+    id: "27",
+    name: "Portable Power Station 300W Battery Generator",
+    price: 199.99,
+    originalPrice: 299.99,
+    image: pressureWasherImg,
+    discount: 33,
+    category: "electronics",
+    description: "Portable power station for camping, emergencies, and outdoor activities.",
+    features: [
+      "300W continuous power",
+      "Multiple output ports",
+      "Solar panel compatible",
+      "LCD display screen",
+      "Portable handle design"
+    ],
+    inStock: true
+  },
+  {
+    id: "28",
+    name: "USB-C Hub 7-in-1 Adapter Multi-Port",
+    price: 29.99,
+    originalPrice: 49.99,
+    image: drillImg,
+    discount: 40,
+    category: "electronics",
+    description: "7-in-1 USB-C hub with HDMI, USB 3.0, and SD card reader.",
+    features: [
+      "7 ports in one hub",
+      "4K HDMI output",
+      "USB 3.0 high speed",
+      "SD/TF card reader",
+      "Aluminum alloy design"
+    ],
+    inStock: true
   }
 ];
 
