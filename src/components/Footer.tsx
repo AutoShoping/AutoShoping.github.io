@@ -73,7 +73,10 @@ export const Footer = () => {
           <p>
             &copy; 2025 CESDeals. All rights reserved. | 
             <Link to="/privacy" className="hover:text-primary transition-colors ml-1">Privacy Policy</Link> | 
-            <Link to="/terms" className="hover:text-primary transition-colors ml-1">Terms of Service</Link>
+            <Link to="/terms" className="hover:text-primary transition-colors ml-1">Terms of Service</Link> |
+            <Link to="/disclaimer" className="hover:text-primary transition-colors ml-1">
+              Disclaimer
+            </Link>
           </p>
         </div>
       </div>

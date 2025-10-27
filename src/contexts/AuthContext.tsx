@@ -18,12 +18,6 @@ const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 const DEMO_USERS = [
   {
-    id: "1",
-    email: "demo@cesdeals.com",
-    password: "demo123",
-    name: "Demo User",
-  },
-  {
     id: "2",
     email: "admin@cesdeals.com",
     password: "admin123",
